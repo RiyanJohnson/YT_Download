@@ -23,10 +23,10 @@ def yt_download():
         c = False
     try:
         y_aud = yt.streams.get_audio_only()
-        y_aud.download('<same location as the directory of the python file>')
+        y_aud.download('<same directory as the python file>')
 
         y_vid = yt_res.get_highest_resolution(progressive=False)
-        y_vid.download('<same location as the directory of the python file>')
+        y_vid.download('<same directory as the python file>')
 
         print("Downloaded")
 
@@ -43,7 +43,7 @@ def combine():
     aud_clip = AudioFileClip("{}".format(title1+".m4a"))
 
     final_clip = vid_clip.with_audio(aud_clip)
-    final_clip.write_videofile("{}".format(title1)+".mp4",threads = 16) #gets stored in the same directory as the python file
+    final_clip.write_videofile("{}".format(title)+"_downloaded"+".mp4",threads = 16)
 
 yt_download()
 combine()
