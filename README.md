@@ -1,7 +1,7 @@
-YouTube Video Downloader
+#YouTube Video Downloader
 A simple Python script to download YouTube videos with separate audio and video streams, then combine them into a single MP4 file.
 
-Features
+##Features
 Download YouTube videos in your preferred resolution
 
 Automatically extracts audio stream separately
@@ -10,21 +10,21 @@ Combines video and audio into a single high-quality MP4 file
 
 Handles special characters in video titles
 
-Requirements
+###Requirements
 This script requires the following Python packages:
 
 pytubefix
 
 moviepy
 
-Installation
-bash
-pip install pytubefix moviepy
-Usage
+###Installation
+```bash
+pip install pytubefix moviepy```
+###Usage
 Run the script:
 
-python
-python youtube_downloader.py
+```python
+python youtube_downloader.py```
 Enter the YouTube video URL when prompted
 
 Choose your desired resolution (e.g., 720p, 1080p)
