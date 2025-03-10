@@ -25,7 +25,7 @@ pip install pytubefix moviepy
 
 1. Run the script:
 ```python
-python youtube_downloader.py
+python yt_down.py
 ```
 
 2. Enter the YouTube video URL when prompted
